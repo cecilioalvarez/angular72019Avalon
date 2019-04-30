@@ -8,9 +8,14 @@ import { HttpClientModule} from "@angular/common/http";
 import { FormularioComponent } from './formulario/formulario.component';
 import { Routes, RouterModule } from '@angular/router';
 import { FormularioEditarComponent } from './formulario-editar/formulario-editar.component';
+import { ComponentePipesComponent } from './componente-pipes/componente-pipes.component';
+import { PorcentajePipe } from './porcentaje.pipe';
+import { ListadodtoComponent } from './negocio/listadodto/listadodto.component';
 
 const rutas: Routes = [
   { path: 'listado', component: ListadoComponent },
+  { path: 'listadodto', component: ListadodtoComponent },
+  { path: 'componentepipes', component: ComponentePipesComponent },
   { path: 'formulario', component: FormularioComponent },
   { path: 'formulario-editar/:titulo', component: FormularioEditarComponent },
  { path: '',   redirectTo: '/listado', pathMatch: 'full' },
@@ -21,7 +26,10 @@ const rutas: Routes = [
     AppComponent,
     ListadoComponent,
     FormularioComponent,
-    FormularioEditarComponent
+    FormularioEditarComponent,
+    ComponentePipesComponent,
+    PorcentajePipe,
+    ListadodtoComponent
   ],
   imports: [
     BrowserModule,

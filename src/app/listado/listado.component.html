@@ -6,7 +6,7 @@ Titulo:<input type="text" name="filtroTitulo" [(ngModel)]="filtroTitulo"/>
 <table>
   <tr *ngFor="let libro of lista">
 
-      <td>{{libro.titulo}}</td>
+      <td>{{libro.titulo | uppercase}}</td>
       <td>{{libro.autor}}</td>
       <td>{{libro.paginas}}</td>
 

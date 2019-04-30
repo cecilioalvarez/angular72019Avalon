@@ -1,0 +1,19 @@
+<form name="formulario">
+    <p>
+      <label for="titulo">tittulo</label>
+      <input type="text" name="titulo" [(ngModel)]="libroNuevo.titulo"/>
+  
+    </p>
+  
+    <p>
+      <label for="autor">autor</label>
+      <input type="text"  name="autor" [(ngModel)]="libroNuevo.autor"/>
+  
+    </p>
+    <p>
+      <label for="paginas">paginas</label>
+      <input type="text" name="paginas" [(ngModel)]="libroNuevo.paginas"/>
+    </p>
+    <input type="button" value="nuevo" (click)="nuevo()"/>
+  </form>
+  

@@ -1,0 +1,23 @@
+
+
+
+Titulo:<input type="text" name="filtroTitulo" [(ngModel)]="filtroTitulo"/>
+
+<table>
+  <tr *ngFor="let libro of lista">
+
+      <td>{{libro.titulo}}</td>
+      <td>{{libro.autor}}</td>
+      <td>{{libro.paginas}}</td>
+
+      <td><input type="button" value="borrar" (click)="borrar(libro)"></td>
+      <td><input type="button" value="editar" (click)="editar(libro)"></td>
+     </tr>
+
+</table>
+<!--etiquetas html-->
+<a routerLink="/formulario" >formulario</a>
+
+
+
+
